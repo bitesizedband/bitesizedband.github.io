@@ -1,0 +1,573 @@
+:root {
+    --gap: 0px;
+    --content-gap: 20px;
+    --nav-width: 720px;
+    --main-width: 720px;
+    --header-height-desktop: 50px;
+    --nav-height-desktop: 30px;
+    --footer-height: 50px;
+    --background: #525252;
+    --text:  #DDDDDD;
+    --secondary: #999999;
+    --highlight: #ffffff;
+    --work-width: 400px;
+    /* --title-font: "Nothing You Could Do"; */
+    --title-font: "Shadows Into Light";
+    /* --title-font: "Over The Rainbow"; */
+    /* --title-font: "Permanent Marker"; */
+    --body-font: "Nunito";
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: var(--main-width);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: var(--body-font), sans-serif;
+    font-weight: 100;
+    font-size: 14pt;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+h1, h2, h3 {
+    color: var(--highlight);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 30pt;
+    font-family: var(--title-font), sans-serif;
+}
+
+h2 {
+    font-size: 30pt;
+}
+
+.video-gallery h2 {
+    color: var(--highlight);
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 20pt;
+    font-family: var(--body-font), sans-serif;
+}
+
+.nav-bar {
+    font-family: var(--title-font), sans-serif;
+}
+
+footer {
+    color: var(--secondary);
+    text-align: center;
+    font-size: 0.8em;
+    min-height: var(--footer-height);
+    padding-top: 60px
+}
+
+
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+
+
+a {
+    color: var(--highlight);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid var(--secondary);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+
+/* links inside markdown  */
+a.md-link {
+    color: var(--highlight);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+
+
+.single-col-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.single-col-gallery-entry {
+    box-sizing: border-box;
+}
+
+.single-col-gallery-entry img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: var(--work-width);
+    height: auto;
+}
+
+
+
+
+.desc {
+    padding: 3%;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+.gallery-image img {
+    width: 100%;
+    height: auto; /* This maintains the aspect ratio */
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+.date {
+    color: var(--secondary);
+}
+
+
+
+
+/* setup for music single pages */
+.work-image {
+    width: 100%;
+    max-width: var(--work-width);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-details {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.work-detail {
+    display: contents; /* Allows the grid to handle the alignment */
+}
+
+.work-content {
+    width: 100%;
+    max-width: var(--work-width);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-content img {
+    max-width: 100%;
+}
+
+
+
+
+.simple-page .work-details {
+    margin-bottom: 0px;
+}
+
+.news .work-details {
+    margin-bottom: 0px;
+}
+
+.news .value {
+    font-weight: bold;
+
+}
+
+
+
+
+
+.label {
+    text-align: right;
+    padding-right: 5px;
+    grid-column: 1;
+    color: var(--secondary);
+}
+
+.value {
+    text-align: left;
+    grid-column: 2;
+}
+
+.links-container {
+    display: flex;
+    gap: 15px; /* Space between links */
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    padding-left: 3em;
+    text-indent: -1em;
+    margin: 10px 0;
+}
+
+li:before {
+    content: "_ ";
+    padding-right: 0px;
+}
+
+
+
+
+
+
+.iframe-container {
+    margin: 0 auto;          /* Centers the wrapper in its parent container */
+    display: flex;
+    justify-content: center; /* Horizontally centers the iframe */
+    width: 100%;             /* Ensures the wrapper takes full width */
+    margin: 0 auto;          /* Centers the wrapper in its parent container */
+}
+
+.iframe-container iframe {
+    width: 90%;             /* Adjust width as needed */
+    aspect-ratio: 16/9;     /* Maintains aspect ratio if needed */
+    border: none;           /* Removes the border */
+}
+
+
+
+
+
+
+
+pre code {
+  font-size: 0.6em;
+}
+
+code {
+  font-size: 0.8em;
+}
+
+
+
+
+
+
+.no-heading {
+    padding-top: 30px;
+    text-align: center;
+    max-width: var(--work-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+
+
+
+.header-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 180px;
+    /* margin-bottom: 10px; */
+}
+
+.logo {
+    flex-shrink: 1;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+
+.nav-bar {
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-bar > a {
+    color: var(--secondary);
+    flex: 1;
+    /* display: block; */
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav-bar a.active {
+    font-weight: bold;
+    color: var(--highlight);
+}
+
+
+
+
+
+
+
+.nav-bar {
+    position: relative;
+}
+
+a {
+  position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    left: -1em;
+    right: -1em;
+    bottom: 0;
+    height: 100%;
+    background-color: white;
+    z-index: -1; /* Place the rectangle behind the text */
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+
+
+
+
+a.no-hover::before {
+    transform: none; /* Prevent the scale effect */
+    background-color: transparent; /* Keep the background color transparent */
+}
+
+a.no-hover:hover {
+    color: inherit; /* Keep the original color */
+    text-decoration: none; /* No underline */
+}
+
+
+
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.social-links li {
+    display: inline-flex; /* Ensure list items are inline */
+    align-items: center; /* Vertically align items within each list item */
+}
+
+.social-links img {
+    width: 25px; /* Set a consistent size for the icons */
+    height: auto; /* Set a consistent size for the icons */
+    transition: transform 0.2s ease; /* Add a smooth transition for hover effect */
+}
+
+.social-links img:hover {
+    transform: scale(1.3); /* Slightly enlarge the icon on hover */
+}
+
+
+
+
+
+
+/* reponsive design */
+@media only screen and (min-width: 501px) {
+
+
+    .label {
+        min-width: 145px;
+    }
+
+    .fake-masonry-gallery {
+        column-count: 2;
+    }
+
+    .gallery-image img {
+        margin-bottom: 10px;
+    }
+
+    .triple-col-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+    .label {
+        min-width: 90px;
+    }
+
+    .fake-masonry-gallery {
+        column-count: 1;
+      }
+
+    .gallery-image img {
+        margin-bottom: 20px;
+      }
+
+    .triple-col-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+      }
+
+
+
+    pre {
+        overflow-x: auto;
+        white-space: pre-wrap; /* Wrap lines on mobile */
+        word-wrap: break-word;
+    }
+
+
+}
+
+/* fonts */
+
+
+/* nunito-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/nunito-v26-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* nunito-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/nunito-v26-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* nunito-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/nunito-v26-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* nunito-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/nunito-v26-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* shadows-into-light-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/shadows-into-light-v19-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/shadows-into-light-v19-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* shadows-into-light-two-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Shadows Into Light Two';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/shadows-into-light-two-v17-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/shadows-into-light-two-v17-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* nothing-you-could-do-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nothing You Could Do';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nothing-you-could-do-v19-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/nothing-you-could-do-v19-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* permanent-marker-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/permanent-marker-v16-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/permanent-marker-v16-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* over-the-rainbow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Over the Rainbow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/over-the-rainbow-v20-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/over-the-rainbow-v20-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
