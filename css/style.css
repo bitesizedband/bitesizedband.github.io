@@ -208,7 +208,6 @@ a.md-link {
 
 
 
-
 .label {
     text-align: right;
     padding-right: 5px;
@@ -249,7 +248,6 @@ li:before {
     content: "_ ";
     padding-right: 0px;
 }
-
 
 
 
@@ -320,7 +318,7 @@ code {
 
 
 .nav-bar {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -424,28 +422,23 @@ a.no-hover:hover {
 
 
 
+.centered {
+    text-align: center;
+}
+
+
+
 
 /* reponsive design */
 @media only screen and (min-width: 501px) {
-
 
     .label {
         min-width: 145px;
     }
 
-    .fake-masonry-gallery {
-        column-count: 2;
-    }
-
     .gallery-image img {
         margin-bottom: 10px;
     }
-
-    .triple-col-gallery {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-
 
 }
 
@@ -454,32 +447,14 @@ a.no-hover:hover {
 
 @media only screen and (max-width: 500px) {
 
-
     .label {
         min-width: 90px;
     }
 
-    .fake-masonry-gallery {
-        column-count: 1;
-      }
 
     .gallery-image img {
         margin-bottom: 20px;
-      }
-
-    .triple-col-gallery {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
-      }
-
-
-
-    pre {
-        overflow-x: auto;
-        white-space: pre-wrap; /* Wrap lines on mobile */
-        word-wrap: break-word;
     }
-
 
 }
 
@@ -532,42 +507,3 @@ a.no-hover:hover {
        url('../fonts/shadows-into-light-v19-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
-/* shadows-into-light-two-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Shadows Into Light Two';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/shadows-into-light-two-v17-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/shadows-into-light-two-v17-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-
-/* nothing-you-could-do-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nothing You Could Do';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/nothing-you-could-do-v19-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/nothing-you-could-do-v19-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-
-/* permanent-marker-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Permanent Marker';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/permanent-marker-v16-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/permanent-marker-v16-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-
-/* over-the-rainbow-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Over the Rainbow';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/over-the-rainbow-v20-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/over-the-rainbow-v20-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
