@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>News on bitesized</title><link>https://bitesizedband.com/news/</link><description>Recent content in News on bitesized</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bitesizedband.com/news/index.xml" rel="self" type="application/rss+xml"/><item><title>change of scene is out</title><link>https://bitesizedband.com/news/change_of_scene/</link><pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate><guid>https://bitesizedband.com/news/change_of_scene/</guid><description>change of scene, our new single, is out. we&amp;rsquo;re particularly proud of how it turned out. you can find links to it here.</description></item><item><title>we made our first video</title><link>https://bitesizedband.com/news/dissociate_acoustic/</link><pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate><guid>https://bitesizedband.com/news/dissociate_acoustic/</guid><description>we released a video for the acoustic version of dissociate. you can check it out here.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on bitesized</title>
+    <link>https://bitesizedband.com/news/</link>
+    <description>Recent content in News on bitesized</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bitesizedband.com/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>alone is out</title>
+      <link>https://bitesizedband.com/news/alone/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://bitesizedband.com/news/alone/</guid>
+      <description>&lt;p&gt;we made &lt;a href=&#34;https://bitesizedband.com/music/alone/&#34;&gt;another song&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>change of scene is out</title>
+      <link>https://bitesizedband.com/news/change_of_scene/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://bitesizedband.com/news/change_of_scene/</guid>
+      <description>&lt;p&gt;change of scene, our new single, is out. we&amp;rsquo;re particularly proud of how it turned out. you can find links to it &lt;a href=&#34;https://bitesizedband.com/music/change_of_scene/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>we made our first video</title>
+      <link>https://bitesizedband.com/news/dissociate_acoustic/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://bitesizedband.com/news/dissociate_acoustic/</guid>
+      <description>&lt;p&gt;we released a video for the acoustic version of dissociate. you can check it out &lt;a href=&#34;https://bitesizedband.com/videos/dissociate_acoustic/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
